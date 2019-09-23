@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Serif:400,700|Roboto:400,500&display=swap&subset=cyrillic,cyrillic-ext");
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+:root {
+  --main-font-color: #5e5e5e;
+  --main-font-family: "Roboto", sans-serif;
+}
+
+body {
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--main-font-color);
+}
+
+header {
+  font-family: var(--main-font-family);
+}
+
+.header__top {
+  background-color: #303030;
+  /* height: 45px; */
+}
+
+.header__btn {
+  float: right;
+  color: #1b1b1b;
+  line-height: 36px;
+  font-size: 16px;
+  position: relative;
+  background-color: #ffc222;
+  padding: 5px 20px 4px 50px;
+}
+
+.header__btn:before {
+  content: "\e9ae";
+  font-family: 'icomoon';
+  position: absolute;
+  color: #1b1b1b;
+  left: 22px;
+  top: 3px;
+}
+
+.header-contacts:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.header__phone,
+.header__email {
+  color: #d3d2d2;
+  line-height: 45px;
+  letter-spacing: 0.25px;
+  position: relative;
+}
+
+.header__phone {
+  padding-left: 20px;
+  padding-right: 30px;
+ 
+}
+
+.header__phone:hover,
+.header__email:hover {
+  color: #ffc222;
+  transition: all .4s;
+}
+
+.header__phone:before {
+  content: "\e942";
+  font-family: 'icomoon';
+  position: absolute;
+  left: 0;
+}
+
+.header__email:before {
+  content: "\e901";
+  font-family: 'icomoon';
+  position: absolute;
+  left: 0;
+}
+
+.header__email {
+  padding-left: 24px;
+}
+
+.header__content {
+  padding: 34px 0px 23px;
+}
+
+.header__content-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu li {
+  display: inline-block;
+}
+
+.menu a {
+  font-size: 16px;
+  color: #323232;
+  line-height: 36px;
+  border: 1px solid transparent;
+  padding: 0 17px;
+  cursor: pointer;
+  transition: all .4s;
+}
+
+.menu a:hover{
+  border-color: #ffc222;
+}
+
+.menu li + li {
+  padding-left: 10px;
+}
+
+.modal-consult {
+  display: none;
+}
+
+.modal-consult h2 {
+  text-align: center;
+}
