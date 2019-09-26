@@ -19,6 +19,9 @@
     <!-- Fancybox -->
     <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
 
+    <!-- Slick css -->
+    <link rel="stylesheet" href="css/slick.css" />
+
     <title>Template2</title>
   </head>
   <body>
@@ -32,11 +35,20 @@
             <a class="header__email" href="loremipsum@ipsum.lorem"
               >loremipsum@ipsum.lorem</a
             >
-            <a class="header__btn" href="javascript:;" data-fancybox data-src="#modal-consult">Бесплатная консультация</a>
+            <a
+              class="header__btn"
+              href="javascript:;"
+              data-fancybox
+              data-src="#modal-consult"
+              >Бесплатная консультация</a
+            >
             <div id="modal-consult" class="modal-consult">
-              <h2>Введите Ваши данные <br> и мы с Вами свяжемся!</h2>
-              <input type="text">
-              <input type="text">
+              <h2>
+                Введите Ваши данные <br />
+                и мы с Вами свяжемся!
+              </h2>
+              <input type="text" />
+              <input type="text" />
             </div>
           </div>
         </div>
@@ -61,7 +73,66 @@
         </div>
       </div>
     </header>
-
+    <section class="slider">
+      <div class="container">
+        <div class="slider__inner">
+          <div class="slider__item">
+            <div class="slider__item-content">
+              <div class="slider__title">
+                Lorem ipsum dolor sit amet.
+              </div>
+              <div class="slider__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+                ea mollitia architecto sequi saepe magni!
+              </div>
+              <a
+                href="javascript:;"
+                data-fancybox
+                data-src="#modal-order"
+                class="slider__btn default-btn"
+                >Оставить заявку</a
+              >
+            </div>
+          </div>
+          <div class="slider__item">
+            <div class="slider__item-content">
+              <div class="slider__title">
+                Lorem ipsum dolor sit amet.
+              </div>
+              <div class="slider__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+                ea mollitia architecto sequi saepe magni!
+              </div>
+              <a
+                href="javascript:;"
+                data-fancybox
+                data-src="#modal-order"
+                class="slider__btn default-btn"
+                >Оставить заявку</a
+              >
+            </div>
+          </div>
+          <div class="slider__item">
+            <div class="slider__item-content">
+              <div class="slider__title">
+                Lorem ipsum dolor sit amet.
+              </div>
+              <div class="slider__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+                ea mollitia architecto sequi saepe magni!
+              </div>
+              <a
+                href="javascript:;"
+                data-fancybox
+                data-src="#modal-order"
+                class="slider__btn default-btn"
+                >Оставить заявку</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- JQuery -->
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -71,6 +142,9 @@
 
     <!-- Fancybox plugin -->
     <script src="js/jquery.fancybox.min.js"></script>
+
+    <!-- Slick slider -->
+    <script src="js/slick.min.js"></script>
 
     <!-- Custom -->
     <script src="js/main.js"></script>
