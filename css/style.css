@@ -150,6 +150,7 @@ header {
   background: url(../img/slider-bg1.png) center no-repeat;
   background-size: cover;
   min-height: 500px;
+  
   /* layer */
   box-shadow: inset 0 0 0 1000px rgba(0,0,0,.3);
 }
@@ -264,5 +265,127 @@ header {
   content: "\e903";
   font-family: 'icomoon';
 }
+
+.about {
+  padding: 50px 0 30px;
+}
+
+.about__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 65px;
+}
+
+.about__title-box {
+  max-width: 520px;
+  padding-left: 140px;
+  position: relative;
+}
+
+.about__title-box:before {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 105px;
+  background-color: #ffc222;
+  left: 0;
+  top: 11px;
+}
+
+.about-title {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #212020;
+  font-family: var(--main-font-family);
+  margin-bottom: 10px;
+}
+
+.about-text {
+  letter-spacing: .1px;
+}
+
+.about__btn {
+  color: #373636;
+  line-height: 24px;
+  letter-spacing: .25px;
+  padding: 5px 38px;
+  border: 3px solid #f0f0f0;
+  align-self: center;
+  margin-right: 38px;
+  transition: all .4s;
+}
+
+.about__btn:hover {
+  opacity: .8;
+}
+
+.about__items {
+  display: flex;
+  justify-content: space-between;
+ 
+}
+
+.about__item {
+  padding: 30px 0px 80px;
+  position: relative;
+  max-width: 360px;
+  text-align: center;
+  min-height: 375px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 7px 24.3px 2.7px rgba(91, 89, 89, 0.14);
+}
+
+.about__item-title{
+  color: #212020;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+  padding: 24px 0px;
+  font-family: var(--main-font-family)
+}
+
+.about__item-text {
+  letter-spacing: 1px;
+  padding: 0px 30px 30px;
+
+}
+
+.about__item-btn {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+  max-width: 360px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 38px 40px;
+}
+
+
+.about__item-btn .default-btn {
+  color: #373636;
+  border-width: 2px;
+  border-right-width: 20px;
+  transition: all .4s;
+}
+
+.about__item-btn .default-btn:hover {
+  transform: translateY(-5px);
+}
+
+.about__item-btn .default-btn:after {
+  color: #ffffff;
+}
+
+.about__item-link {
+  color: #050505;
+  font-family: var(--main-font-family);
+  border-bottom: 1px solid #050505;
+  line-height: 12px;
+}
+
 
 
