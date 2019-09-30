@@ -266,24 +266,24 @@ header {
   font-family: 'icomoon';
 }
 
-.about {
+.services {
   padding: 50px 0 30px;
 }
 
-.about__top {
+.services__top {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   margin-bottom: 65px;
 }
 
-.about__title-box {
+.services__title-box {
   max-width: 520px;
   padding-left: 140px;
   position: relative;
 }
 
-.about__title-box:before {
+.services__title-box:before {
   content: '';
   position: absolute;
   height: 2px;
@@ -293,7 +293,7 @@ header {
   top: 11px;
 }
 
-.about-title {
+.services-title {
   font-size: 24px;
   font-weight: 500;
   line-height: 24px;
@@ -302,11 +302,16 @@ header {
   margin-bottom: 10px;
 }
 
-.about-text {
+.services__item-img {
+  min-height: 60px;
+  object-fit: contain;
+} 
+
+.services-text {
   letter-spacing: .1px;
 }
 
-.about__btn {
+.services__btn {
   color: #373636;
   line-height: 24px;
   letter-spacing: .25px;
@@ -317,17 +322,17 @@ header {
   transition: all .4s;
 }
 
-.about__btn:hover {
+.services__btn:hover {
   opacity: .8;
 }
 
-.about__items {
+.services__items {
   display: flex;
   justify-content: space-between;
  
 }
 
-.about__item {
+.services__item {
   padding: 30px 0px 80px;
   position: relative;
   max-width: 360px;
@@ -337,7 +342,7 @@ header {
   box-shadow: 0px 7px 24.3px 2.7px rgba(91, 89, 89, 0.14);
 }
 
-.about__item-title{
+.services__item-title{
   color: #212020;
   font-size: 18px;
   line-height: 24px;
@@ -346,13 +351,13 @@ header {
   font-family: var(--main-font-family)
 }
 
-.about__item-text {
+.services__item-text {
   letter-spacing: 1px;
   padding: 0px 30px 30px;
 
 }
 
-.about__item-btn {
+.services__item-btn {
   position: absolute;
   bottom: 40px;
   left: 0;
@@ -361,26 +366,26 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 38px 40px;
+  padding: 0 38px 0 40px;
 }
 
 
-.about__item-btn .default-btn {
+.services__item-btn .default-btn {
   color: #373636;
   border-width: 2px;
   border-right-width: 20px;
   transition: all .4s;
 }
 
-.about__item-btn .default-btn:hover {
+.services__item-btn .default-btn:hover {
   transform: translateY(-5px);
 }
 
-.about__item-btn .default-btn:after {
+.services__item-btn .default-btn:after {
   color: #ffffff;
 }
 
-.about__item-link {
+.services__item-link {
   color: #050505;
   font-family: var(--main-font-family);
   border-bottom: 1px solid #050505;
