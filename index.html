@@ -22,6 +22,9 @@
     <!-- Slick css -->
     <link rel="stylesheet" href="css/slick.css" />
 
+    <!-- Form styler -->
+    <link rel="stylesheet" href="css/jquery.formstyler.css">
+
     <title>Template2</title>
   </head>
   <body>
@@ -137,10 +140,10 @@
       <div class="container">
         <div class="services__top">
           <div class="services__title-box">
-            <div class="services-title">
+            <div class="services__title">
               Lorem, ipsum.
             </div>
-            <div class="services__item-img" class="services-text">
+            <div class="services__item-img" class="services__text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
               eveniet nam ipsam nemo similique, aut, autem aliquid assumenda
               corrupti debitis necessitatibus totam possimus dolore sed quod,
@@ -207,6 +210,82 @@
         </div>
       </div>
     </section>
+    <section class="about">
+      <div class="container">
+        <div class="about__inner">
+          <div class="about__title">Lorem, ipsum.</div>
+          <div class="about__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,
+            suscipit. Repudiandae sequi deserunt deleniti adipisci beatae aut
+            corporis fugiat incidunt, magni eum optio expedita animi nobis!
+            Earum, ducimus! Molestiae consectetur voluptas nisi sint perferendis
+            voluptate quas quidem ullam necessitatibus. Quam.
+          </div>
+          <a
+            href="javascript:;"
+            data-fancybox
+            data-src="#modal-order"
+            class="about__btn default-btn"
+            >Узнать больше</a
+          >
+        </div>
+      </div>
+    </section>
+    <section class="form">
+      <div class="container">
+        <div class="form__inner">
+          <div class="form__content">
+            <div class="form__title-box">
+              <div class="form__title">Lorem, ipsum.</div>
+              <div class="form__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Doloremque soluta sed dolores illum itaque ipsa, minima, rem
+                asperiores tempore eum architecto, praesentium veritatis ex.
+                Harum fugiat ullam alias dolorem optio!
+              </div>
+            </div>
+            <div class="form__box">
+              <form action="">
+                <div class="form__box-inner">
+                  <div class="form__box-left">
+                    <label for="">
+                      E-mail
+                      <input type="text" />
+                    </label>
+                    <label for="">
+                      Контактный телефон
+                      <input type="text" />
+                    </label>
+                    <label for="">
+                      Ф.И.О
+                      <input type="text" />
+                    </label>
+                    <label for="">
+                      Тема вопроса
+                      <select name="form__select" id="">
+                        <option value="" disabled selected>---------</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                      </select>
+                    </label>
+                  </div>
+                  <div class="form__box-right">
+                    <label for="">
+                      Сообщение
+                      <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </label>
+                    <button class="default-btn" type="submit">
+                      Получить консультацию
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- JQuery -->
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -219,6 +298,9 @@
 
     <!-- Slick slider -->
     <script src="js/slick.min.js"></script>
+
+    <!-- Form styler -->
+    <script src="js/jquery.formstyler.min.js"></script>
 
     <!-- Custom -->
     <script src="js/main.js"></script>
