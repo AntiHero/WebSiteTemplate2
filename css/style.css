@@ -599,6 +599,7 @@ header {
 .advantages-item {
   max-width: 350px;
   padding: 0px 0px;
+  opacity: 0;
 }
 
 .advantages__title {
