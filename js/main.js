@@ -1,15 +1,3 @@
-$(window).on("load", () => {
-  $(".slider__inner").slick({
-    prevArrow: '<button type="button" class="slick-btn slick-prev"></button>',
-    nextArrow: '<button type="button" class="slick-btn slick-next"></button>',
-    infinite: false
-  });
-
-  $("select").styler();
-
-  advantagesAnim();
-});
-
 const advantagesAnim = () => {
   /* Timeline */
   let tl = new TimelineMax({ onUpdate: updatePercentage, yoyo: true });
@@ -20,10 +8,9 @@ const advantagesAnim = () => {
     ".advantages-item",
     1,
     {
-      opacity: 1,
-      ease: Power4.easeIn
+      opacity: 1
     },
-    0.2
+    0.6
   );
 
   tl.insert(tween1);
@@ -33,14 +20,43 @@ const advantagesAnim = () => {
 
   /* Scene with params */
   const scene = new ScrollMagic.Scene({
-    triggerElement: ".advantages",
+    triggerElement: ".advantages__inner",
     triggerHook: 1,
     duration: 0
-  }).setTween(tl);
+  })
+    .setTween(tl)
+    .addTo(controller);
 
   function updatePercentage() {
     tl.progress();
   }
 
-  scene.addTo(controller);
+  scene.on("enter", function() {
+    tl.timeScale(1);
+  });
+
+  scene.on("leave", function() {
+    tl.timeScale(5);
+  });
 };
+
+$(window).on("load", () => {
+  $(".slider__inner, .news__slider-inner").slick({
+    prevArrow: '<button type="button" class="slick-btn slick-prev"></button>',
+    nextArrow: '<button type="button" class="slick-btn slick-next"></button>',
+    infinite: false,
+  });
+
+  // $(".news__slider-inner").slick({
+  //   prevArrow: '<button type="button" class="slick-btn slick-prev"></button>',
+  //   nextArrow: '<button type="button" class="slick-btn slick-next"></button>',
+  //   infinite: false,
+  //   speed: 300,
+  //   fade: true,
+  //   cssEase: "linear"
+  // });
+
+  $("select").styler();
+
+  advantagesAnim();
+});

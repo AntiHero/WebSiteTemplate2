@@ -57,7 +57,7 @@ header {
 
 .header__btn:before {
   content: "\e9ae";
-  font-family: 'icomoon';
+  font-family: "icomoon";
   position: absolute;
   color: #1b1b1b;
   left: 22px;
@@ -65,7 +65,7 @@ header {
 }
 
 .header-contacts:after {
-  content: '';
+  content: "";
   display: block;
   clear: both;
 }
@@ -81,25 +81,24 @@ header {
 .header__phone {
   padding-left: 20px;
   padding-right: 30px;
- 
 }
 
 .header__phone:hover,
 .header__email:hover {
   color: #ffc222;
-  transition: all .4s;
+  transition: all 0.4s;
 }
 
 .header__phone:before {
   content: "\e942";
-  font-family: 'icomoon';
+  font-family: "icomoon";
   position: absolute;
   left: 0;
 }
 
 .header__email:before {
   content: "\e901";
-  font-family: 'icomoon';
+  font-family: "icomoon";
   position: absolute;
   left: 0;
 }
@@ -128,10 +127,10 @@ header {
   border: 1px solid transparent;
   padding: 0 17px;
   cursor: pointer;
-  transition: all .4s;
+  transition: all 0.4s;
 }
 
-.menu a:hover{
+.menu a:hover {
   border-color: #ffc222;
 }
 
@@ -151,9 +150,9 @@ header {
   background: url(../img/slider-bg1.png) center no-repeat;
   background-size: cover;
   min-height: 500px;
-  
+
   /* layer */
-  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.3);
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
 }
 
 .slider__item-content {
@@ -203,7 +202,7 @@ header {
 
 .default-btn:after {
   content: "\e902";
-  font-family: 'icomoon';
+  font-family: "icomoon";
   position: absolute;
   right: -12px;
   top: 50%;
@@ -224,7 +223,7 @@ header {
   border: 1px solid #ffffff;
   background: transparent;
   cursor: pointer;
-  transition: all .4s;
+  transition: all 0.4s;
   background-color: #ffc222;
 }
 
@@ -251,7 +250,7 @@ header {
 
 .slick-next:before {
   content: "\e902";
-  font-family: 'icomoon';
+  font-family: "icomoon";
 }
 
 .slick-next {
@@ -264,14 +263,15 @@ header {
 
 .slick-prev:before {
   content: "\e903";
-  font-family: 'icomoon';
+  font-family: "icomoon";
 }
 
 .services {
   padding: 50px 0 35px;
 }
 
-.services__top {
+.services__top,
+.news__top {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -279,15 +279,17 @@ header {
 }
 
 .services__title-box,
-.form__title-box {
+.form__title-box,
+.news__title-box {
   max-width: 520px;
   padding-left: 140px;
   position: relative;
 }
 
 .services__title-box:before,
-.form__title-box:before {
-  content: '';
+.form__title-box:before,
+.news__title-box:before {
+  content: "";
   position: absolute;
   height: 2px;
   width: 105px;
@@ -297,7 +299,8 @@ header {
 }
 
 .services__title,
-.form__title {
+.form__title,
+.news__title {
   font-size: 24px;
   font-weight: 500;
   line-height: 24px;
@@ -309,32 +312,34 @@ header {
 .services__item-img {
   min-height: 60px;
   object-fit: contain;
-} 
-
-.services__text,
-.form__text {
-  letter-spacing: .1px;
 }
 
-.services__btn {
+.services__text,
+.form__text,
+.news__text {
+  letter-spacing: 0.1px;
+}
+
+.services__btn,
+.news__btn {
   color: #373636;
   line-height: 24px;
-  letter-spacing: .25px;
+  letter-spacing: 0.25px;
   padding: 5px 38px;
   border: 3px solid #f0f0f0;
   align-self: center;
   margin-right: 38px;
-  transition: all .4s;
+  transition: all 0.4s;
 }
 
-.services__btn:hover {
+.services__btn:hover,
+.news__btn:hover {
   transform: translateX(5px);
 }
 
 .services__items {
   display: flex;
   justify-content: space-between;
- 
 }
 
 .services__item {
@@ -347,19 +352,18 @@ header {
   box-shadow: 0px 7px 24.3px 2.7px rgba(91, 89, 89, 0.14);
 }
 
-.services__item-title{
+.services__item-title {
   color: #212020;
   font-size: 18px;
   line-height: 24px;
   font-weight: 500;
   padding: 24px 0px;
-  font-family: var(--main-font-family)
+  font-family: var(--main-font-family);
 }
 
 .services__item-text {
   letter-spacing: 1px;
   padding: 0px 30px 30px;
-
 }
 
 .services__item-btn {
@@ -374,12 +378,11 @@ header {
   padding: 0 38px 0 40px;
 }
 
-
 .services__item-btn .default-btn {
   color: #373636;
   border-width: 2px;
   border-right-width: 20px;
-  transition: all .4s;
+  transition: all 0.4s;
 }
 
 .services__item-btn .default-btn:hover {
@@ -402,7 +405,6 @@ header {
   background: url(../img/about-bg.png) center no-repeat;
   background-size: cover;
   padding: 33px 0px 45px;
-  
 }
 
 .about__inner {
@@ -423,7 +425,7 @@ header {
   font-family: var(--main-font-family);
 }
 
-.about__text { 
+.about__text {
   line-height: 24px;
   letter-spacing: 0.1px;
   color: #d3d2d2;
@@ -435,11 +437,11 @@ header {
 }
 
 .about__btn.default-btn {
-  transition: all .4s;
+  transition: all 0.4s;
 }
 
 .about__btn.default-btn:hover {
-  transform: translateX(5px)
+  transform: translateX(5px);
 }
 
 .form {
@@ -519,7 +521,7 @@ header {
 
 .form__box-inner .jq-selectbox__trigger-arrow:before {
   content: "\e902";
-  font-family: 'icomoon';
+  font-family: "icomoon";
   position: absolute;
   transform: rotate(90deg);
   right: 17px;
@@ -527,19 +529,19 @@ header {
 }
 
 .form__box-inner .jq-selectbox__dropdown {
-	width: 100%;
-	margin: 2px 0 0;
-	padding: 0;
-	border: 1px solid #e6e6e6;
-	background: #ffffff;
-	box-shadow: 0 2px 10px rgba(0,0,0,.2);
+  width: 100%;
+  margin: 2px 0 0;
+  padding: 0;
+  border: 1px solid #e6e6e6;
+  background: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 .form__box-inner .jq-selectbox__dropdown li {
   min-height: 18px;
-	padding: 5px 17px 6px;
-	color: #231F20;
-  transition: all .3s;
+  padding: 5px 17px 6px;
+  color: #231f20;
+  transition: all 0.3s;
 }
 
 .form__box-inner .jq-selectbox__dropdown li.disabled {
@@ -564,7 +566,7 @@ header {
   color: #282828;
   float: right;
   cursor: pointer;
-  transition: all .4s;
+  transition: all 0.4s;
 }
 
 .form__box-inner button:after {
@@ -647,6 +649,139 @@ header {
   padding: 0px 15px;
 }
 
+.news {
+  padding: 55px 0px 110px;
+  background-color: #f9f9f9;
+}
 
+.news__inner {
+  display: flex;
+  justify-content: space-between;
+}
 
+.news__slider {
+  vertical-align: middle;
+  position: relative;
+  padding: 64px 39px 50px 49px;
+  max-width: 555px;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0px 5px 15.36px 0.64px rgba(128, 127, 127, 0.13);
+}
+
+.news__slider::before {
+  font-family: "icomoon";
+  content: "\f10e";
+  width: 65px;
+  height: 30px;
+  background-color: #ffc222;
+  top: 0;
+  position: absolute;
+  text-align: center;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.news__slider-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.news__blog {
+  max-width: 260px;
+  width: 100%;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+
+.news__blog:hover {
+  transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  -o-transform: translateY(-10px);
+}
+
+.news__images {
+  position: relative;
+}
+
+.news__date {
+  position: absolute;
+  background: #ffc222;
+  height: 55px;
+  width: 50px;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 30px;
+  font-weight: 700;
+  top: 0;
+  left: 10px;
+}
+
+.news__blog-title {
+  font-size: 16px;
+  line-height: 18px;
+  font-family: var(--main-font-family);
+  font-weight: 500;
+  color: #242424;
+  letter-spacing: 0.5px;
+  padding: 12px 0px;
+}
+
+.news__blog-text {
+  letter-spacing: 0.1px;
+  color: #5e5e5e;
+}
+
+.news__slider-title {
+  padding-left: 3px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #242424;
+  font-weight: 500;
+  font-family: var(--main-font-family);
+  letter-spacing: 0.5px;
+  margin-bottom: 15px;
+  max-width: 374px;
+}
+
+.news__slider-text {
+  margin-bottom: 35px;
+}
+
+.news__slider-author {
+  padding-left: 3px;
+  letter-spacing: 0.1px;
+  color: #212020;
+  font-weight: 500;
+}
+
+.news__slider-inner .slick-btn {
+  top: auto;
+  bottom: -110px;
+}
+
+.news__slider-inner .slick-next {
+  right: -39px;
+}
+
+.news__slider-inner .slick-prev {
+  right: 20px;
+  left: auto;
+}
+
+.news__slider .slick-disabled {
+  border-color: #dadada;
+  color: #9e9c9c;
+}
+
+.news__slider .slick-disabled::before {
+  color: #9e9c9c;
+}
 
