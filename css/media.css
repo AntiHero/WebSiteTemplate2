@@ -42,7 +42,7 @@
   }
 
   .news__blog:after {
-    content: '';
+    content: "";
     clear: both;
     display: block;
   }
@@ -89,10 +89,7 @@
     float: none;
   }
 
-  .services__title-box {
-    margin: 0 auto;
-  }
-
+  .services__title-box,
   .form__title-box,
   .news__title-box {
     margin: 0 auto;
@@ -210,7 +207,9 @@
     display: none;
   }
 
-  .form__title-box {
+  .services__title-box,
+  .form__title-box,
+  .news__title-box {
     padding-left: 0;
   }
 
