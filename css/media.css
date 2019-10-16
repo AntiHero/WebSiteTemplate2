@@ -207,13 +207,10 @@
     display: none;
   }
 
+
   .services__title-box,
   .form__title-box,
   .news__title-box {
-    padding-left: 0;
-  }
-
-  .services__title-box {
     padding-left: 0;
   }
 
