@@ -25,6 +25,9 @@
     <!-- Form styler -->
     <link rel="stylesheet" href="css/jquery.formstyler.css" />
 
+    <!-- Media css-->
+    <link rel="stylesheet" href="css/media.css">
+
     <title>Template2</title>
   </head>
   <body>
@@ -50,8 +53,11 @@
                 Введите Ваши данные <br />
                 и мы с Вами свяжемся!
               </h2>
-              <input type="text" />
-              <input type="text" />
+              <form action="">
+                <input type="text" placeholder="Ваше имя" />
+                <input type="text" placeholder="Ваш телефон"/>
+                <input type="submit" value="Отправить" />
+              </form>
             </div>
           </div>
         </div>
@@ -65,6 +71,9 @@
               </a>
             </div>
             <nav class="menu">
+              <div class="header__btn-menu">
+                <span class="icon-paragraph-justify"></span>
+              </div>
               <ul>
                 <li><a href="#">Главная</a></li>
                 <li><a href="#">О компании</a></li>
@@ -351,8 +360,8 @@
                   Bühne) Den ganzen Kreis der Schöpfung aus, Und wandelt mit
                   bedächt'ger Schnelle Vom Himmel durch die Welt zur Hölle!
                   Vernunft fängt wieder an zu sprechen Und Hoffnung wieder an zu
-                  sprechen Und Hoffnung wieder an zu sprechen Und Hoffnung wieder an zu
-                  Lorem ipsum dolor sit amet.
+                  sprechen Und Hoffnung wieder an zu sprechen Und Hoffnung
+                  wieder an zu Lorem ipsum dolor sit amet.
                 </div>
                 <div class="news__slider-author">Lorem, ipsum 1</div>
               </div>
@@ -415,6 +424,53 @@
         </div>
       </div>
     </section>
+    <footer class="footer">
+      <div class="footer__content">
+        <div class="container">
+          <div class="footer__inner">
+            <div class="footer__info">
+              <div class="footer__title">
+                Lorem, ipsum dolor.
+              </div>
+              <div class="footer__text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia,
+                blanditiis.
+              </div>
+              <a
+                class="header__btn"
+                href="javascript:;"
+                data-fancybox
+                data-src="#modal-consult"
+                >Бесплатная консультация</a
+              >
+              <ul class="footer__contacts">
+                <li><a href="tel:+803333333" class="footer__phone">+375(33)333-33-33</a></li>
+                <li><a href="#" class="footer__email">lorem@ipsum.com</a></li>
+                <li><a href="#" class="footer__address">г.Минск, ул. Космонавтов</a></li>
+              </ul>
+            </div>
+            <div class="footer__map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2353.486490385344!2d27.462014415857535!3d53.851996680088114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbda783c870169%3A0xd2a66eecdaaff4be!2z0YPQuy4g0JrQvtGB0LzQvtC90LDQstGC0L7Qsiwg0JzQuNC90YHQug!5e0!3m2!1sru!2sby!4v1571157390003!5m2!1sru!2sby"
+                frameborder="0"
+                style="border:0;"
+                allowfullscreen=""
+                width="100%"
+                height="250px"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        <div class="container">
+          <div class="copy__text">
+            &copy;<span class="zero-help">ZeroHelp Studio</span> 2019. All rights reserved. Designed with
+            passion
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <!-- JQuery -->
     <script
